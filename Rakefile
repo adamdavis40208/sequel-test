@@ -1,6 +1,6 @@
 require 'dotenv/tasks'
 
-namespace :db  do
+namespace :db do
   require "sequel"
   Sequel.extension :migration
 

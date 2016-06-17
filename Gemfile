@@ -5,3 +5,5 @@ source "https://rubygems.org"
 gem 'sequel'
 gem 'mysql'
 gem 'sinatra'
+gem 'dotenv'
+gem 'rake'

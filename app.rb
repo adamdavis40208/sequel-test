@@ -1,10 +1,14 @@
 require 'sinatra'
 require 'sequel'
+require 'dotenv'
+
 class Todo < Sinatra::Application
   configure do
-    DB = Sequel.connect("mysql://test:test@localhost/todo")
+    Dotenv.load
+    DB = Sequel.connect(ENV["DATABASE_URL"])
     Dir[File.join(File.dirname(__FILE__),'model','*.rb')].
         each { |model| require model }
+
   end
 end
 

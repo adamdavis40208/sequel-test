@@ -8,6 +8,8 @@ GEM
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
+    rack-test (0.6.3)
+      rack (>= 1.0)
     rake (11.2.2)
     rspec (3.2.0)
       rspec-core (~> 3.2.0)
@@ -23,6 +25,8 @@ GEM
       rspec-support (~> 3.2.0)
     rspec-support (3.2.2)
     sequel (4.35.0)
+    sequel-seed (0.3.2)
+      sequel (>= 4.0)
     sinatra (1.4.7)
       rack (~> 1.5)
       rack-protection (~> 1.4)
@@ -36,7 +40,12 @@ DEPENDENCIES
   dotenv
   fixture_dependencies
   mysql
+  rack-test
   rake
   rspec
   sequel
+  sequel-seed
   sinatra
+
+BUNDLED WITH
+   1.12.5

@@ -1,8 +1,11 @@
 # sequel-test
 ----------------
 
+A project to work through the 'Learning Sinatra' book. Also adding to their project as they don't cover... testing... properly handling a DB, etc. 
+
 TODO:
 
-* Add rake tasks for tearing down/seeding/resetting DB
-* Add test DB for tests/add tests for models
-* Add routes for CRUD of objects
+* Flesh out the controllers and give full crud to all models
+* Make a .env for dev/test/etc
+* Add a front-end
+* Push to a production environment
